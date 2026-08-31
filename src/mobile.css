@@ -1,0 +1,28 @@
+.menu-button,.mobile-sidebar,.drawer-backdrop,.mobile-info-links,.mobile-sidebar-head{display:none}
+body.drawer-open{overflow:hidden}
+@media(max-width:760px){
+  .desktop-sidebar{display:none!important}
+  .menu-button{display:grid;width:38px;height:38px;padding:9px;place-content:center;gap:4px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text)}
+  .menu-button span{display:block;width:17px;height:2px;border-radius:2px;background:currentColor}
+  .topbar{gap:10px}
+  .topbar .logo{display:flex;min-width:0}
+  .topbar .logo strong{font-size:13px;white-space:nowrap}
+  .topbar nav{display:none}
+  .actions{margin-left:auto}
+  .drawer-backdrop{display:block;position:fixed;inset:0;z-index:80;background:rgba(3,8,18,.62);backdrop-filter:blur(4px);opacity:0;visibility:hidden;transition:.2s}
+  .drawer-backdrop.open{opacity:1;visibility:visible}
+  .mobile-sidebar{display:flex;position:fixed;inset:0 auto 0 0;z-index:90;width:min(88vw,340px);max-width:100%;padding:14px;background:var(--panel);border-right:1px solid var(--line);box-shadow:24px 0 64px rgba(0,0,0,.28);transform:translateX(-104%);visibility:hidden;transition:transform .22s ease,visibility .22s ease;overflow-y:auto}
+  .mobile-sidebar.open{transform:translateX(0);visibility:visible}
+  .mobile-sidebar-head{display:flex;justify-content:flex-end;min-height:38px}
+  .drawer-close{width:38px;height:38px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);color:var(--text);font-size:24px;line-height:1}
+  .mobile-sidebar .side-logo{padding-top:2px}
+  .mobile-sidebar .cats{flex:0 0 auto}
+  .mobile-info-links{display:grid;gap:3px;margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+  .mobile-info-links a{padding:9px 10px;border-radius:8px;color:var(--muted);text-decoration:none;font-size:12px}
+  .mobile-info-links a:hover{background:var(--panel2);color:var(--text)}
+  .mobile-sidebar .side-local{margin-top:18px}
+}
+@media(max-width:420px){
+  .topbar .logo strong{display:none}
+  .mobile-sidebar{width:min(92vw,340px)}
+}
