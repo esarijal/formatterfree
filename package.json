@@ -1,0 +1,9 @@
+{
+  "name": "formatterfree",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {"dev":"vite","build":"vite build","preview":"vite preview"},
+  "dependencies": {"crypto-js":"^4.2.0","csso":"^5.0.5","fast-xml-parser":"^5.2.5","he":"^1.2.0","js-beautify":"^1.15.4","js-yaml":"^4.1.0","papaparse":"^5.5.3","qrcode":"^1.5.4","sql-formatter":"^15.6.9","terser":"^5.44.0","xml-formatter":"^3.6.7"},
+  "devDependencies": {"vite":"^7.1.3"}
+}
